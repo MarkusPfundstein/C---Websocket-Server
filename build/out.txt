@@ -1,0 +1,141 @@
+Open Socket: 3
+Reactor running on port: 56665
+New connection
+New High Sock: 3
+Connection Socket: 4
+Open Socket: 4
+ **** READ START **** 
+Connection::Read START: 4
+will try to read: 1024 bytes
+starting buffer len: 0
+	START READ LOOP
+	Expected size: 1 bigger 0
+	Bytes read: 202
+	expected: 0
+  buffer_len_: 202
+	FINISHED READ LOOP
+Connection::Read() - BufferData
+bytes read; -1
+BufferLength: 202
+**** READ FINISH *****
+Connection::ReadHTMLPacket::Found end of header
+Connection::AuthWebSocket() : GET /?encoding=text HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Host: localhost:56665
+Origin: http://www.websocket.org
+Sec-WebSocket-Key: 30/QvGeHk31qbITajuD+FA==
+Sec-WebSocket-Version: 13
+
+
+key: 30/QvGeHk31qbITajuD+FA==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+Close Socket: 4
+New connection
+New High Sock: 3
+Connection Socket: 4
+Open Socket: 4
+ **** READ START **** 
+Connection::Read START: 4
+will try to read: 1024 bytes
+starting buffer len: 0
+	START READ LOOP
+	Expected size: 1 bigger 0
+	Bytes read: 202
+	expected: 0
+  buffer_len_: 202
+	FINISHED READ LOOP
+Connection::Read() - BufferData
+bytes read; -1
+BufferLength: 202
+**** READ FINISH *****
+Connection::ReadHTMLPacket::Found end of header
+Connection::AuthWebSocket() : GET /?encoding=text HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Host: localhost:56665
+Origin: http://www.websocket.org
+Sec-WebSocket-Key: zsEWxK9npDB7GdXW0PHFmA==
+Sec-WebSocket-Version: 13
+
+
+key: zsEWxK9npDB7GdXW0PHFmA==258EAFA5-E914-47DA-95CA-C5AB0DC85B11
+*****SEND*****
+HTTP/1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Accept: yFl4RuBERecyadyjOqyEF/PrmzM=
+Sec-WebSocket-Protocol: chat
+
+
+	** WRITE ** 
+	bytes send: 159
+   ** END OF WRITE ** 
+On accept
+connection check
+connection check
+ **** READ START **** 
+Connection::Read START: 4
+will try to read: 6 bytes
+starting buffer len: 0
+	START READ LOOP
+	Expected size: 6 bigger 0
+	Bytes read: 6
+	expected: 0
+  buffer_len_: 6
+	FINISHED READ LOOP
+Connection::Read() - BufferData
+bytes read; 6
+BufferLength: 6
+**** READ FINISH *****
+	fin: 1
+	masked: 1
+   opcode: 
+1
+	text frame
+ **** READ START **** 
+Connection::Read START: 4
+will try to read: 2 bytes
+starting buffer len: 6
+	START READ LOOP
+	Expected size: 2 bigger 0
+	Bytes read: 2
+	expected: 0
+  buffer_len_: 8
+	FINISHED READ LOOP
+Connection::Read() - BufferData
+bytes read; 2
+BufferLength: 8
+**** READ FINISH *****
+	medium stream
+		PayLoad Size:  49480
+  	Header Size:   8
+  	Total: 	       49488
+  	BufferSize:    8
+------------------------------------------------
+  	Difference:    49480
+  	Socket:        4
+ **** READ START **** 
+Connection::Read START: 4
+will try to read: 49480 bytes
+starting buffer len: 8
+	START READ LOOP
+	Expected size: 49480 bigger 0
+	Bytes read: 49480
+	expected: 0
+  buffer_len_: 49488
+	FINISHED READ LOOP
+Connection::Read() - BufferData
+bytes read; 49480
+BufferLength: 49488
+**** READ FINISH *****
+Payload size: 49480
+Header len: 8
+Real BufferLen: 49488
+Reactor::HandleConnection::WebSocketError: 0
+On Receive
+	** WRITE ** 
+	bytes send: 49484
+   ** END OF WRITE ** 
+Close Socket: 3
+bye bye
+Close Socket: 4

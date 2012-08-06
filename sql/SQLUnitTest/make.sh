@@ -1,0 +1,2 @@
+rm ../*.o
+make regular

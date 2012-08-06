@@ -1,0 +1,8 @@
+# no swaps
+*.swp
+
+# no objects
+*.o
+
+# no builds
+*.out
