@@ -27,7 +27,9 @@ namespace engine {
 
 	void Engine::OnReceiveCallback(const Connection& connection)
 	{
-		//std::cout << std::this_thread::get_id() << std::endl;
+    // example of how you could fetch from mysql and post it back to the user
+    // as a json file
+
 		std::string stream = connection.Stream();
 
 		if (stream.length() > 0) {
@@ -77,11 +79,11 @@ namespace engine {
 
 	bool Engine::Run(const std::string& init_file)
 	{
-		int port = 56665; // get from init_file
-		std::string username = "m4st3r";
-		std::string password = "illuminati2012";
-		std::string database = "prototype2012";
-		std::string host = "ec2-46-137-146-117.eu-west-1.compute.amazonaws.com";
+		int port = <port>; // get from init_file
+		std::string username = <username>;
+		std::string password = <password>;
+		std::string database = <database>;
+		std::string host = <server>;
 
 		if (!impl_->database_.Startup(username, password, database, host)) {
 			return false;
