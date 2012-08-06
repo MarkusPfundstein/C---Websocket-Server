@@ -1,0 +1,1 @@
+License: Do what you want with it. If something goes wrong its not my fault! Dependencies: libjson, c++11, libmysqlclient... See makefile in build folder for more options. Runs on Ubuntu/Debian/MacOSX.. No windows support (ON PURPOSE)
